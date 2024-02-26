@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 1. Archivo reset css -->
+    <!--  <link rel="stylesheet" href="css/reset.css"> -->
+    <!-- 2. Archivos de css externos (fuentes) -->
+    <script src="https://kit.fontawesome.com/d66d5b6a78.js" crossorigin="anonymous"></script>
+    <!-- 3. Estilos personalizados -->
+    <link rel="stylesheet" href="css/encabezados.css">
+    <link rel="stylesheet" href="css/perfil.css">
+    <title>Perfil FASTHABIT</title>
+</head>
+
+<body>
+    <header>
+        <nav class="menu-trasero">
+            <ul class="menu-horizontal">
+                <li class="principal"><a href="landing.html">MENU</a>
+                    <ul class="menu-vertical">
+                        <div class="menu1">
+                            <div class="menu-flex">
+                                <li class="secundario"><i class="fa-sharp fa-solid fa-house"></i><a href="landing.html">INICIO</a></li>
+                            </div>
+
+                            <div class="menu-flex">
+                                <li class="secundario"><i class="fa-solid fa-circle-user"></i><a href="perfil.html">PERFIL</a></li>
+                            </div>
+
+                            <div class="menu-flex">
+                                <li class="secundario"><i class="fa-solid fa-hourglass-start"></i></i><a href="ayuno.html">AYUNO</a></li>
+                            </div>
+                            <div class="menu-flex">
+                                <li class="secundario"><i class="fa-solid fa-weight-scale"></i><a href="pesos.html">PESOS</a></li>
+                            </div>
+                        </div>
+
+                        <div class="menu2">
+
+
+                            <div class="menu-flex">
+                                <li class="secundario"><i class="fa-solid fa-utensils"></i><a href="recetas.html">RECETAS</a></li>
+                            </div>
+
+                            <div class="menu-flex">
+                                <li class="secundario"><i class="fa-solid fa-bullseye"></i><a href="objetivos.html">OBJETIVOS</a></li>
+                            </div>
+                            <div class="menu-flex">
+                                <li class="secundario"><i class="fa-solid fa-dumbbell"></i><a href="actividad.html">ACTIVIDAD</a></li>
+                            </div>
+                            <div class="menu-flex">
+                                <li class="secundario"><i class="fa-solid fa-id-card"></i><a href="registro.html">REGISTRO</a></li>
+                            </div>
+                        </div>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main id="main">
+        <div class="encabezado">
+            <div class="tab">
+                <p class="tipo">Perfil</p>
+            </div>
+            <div class="logo">
+                <p class="fast">FASTHABIT</p>
+            </div>
+        </div>
+
+        <!-- *****OJO****** --- > No cambiar nada de lo de arriba <---  -->
+        <section id="perfil">
+            <div class="formulario-1">
+
+                <div>
+                    <img id="foto" alt="imagen del usuario">
+                </div>
+
+
+                <form >
+                    <div class="nombre-usuario">
+                        <span for="txt-nombre" id="txt-nombre"></span>
+                    </div>
+
+                    <div class="perfil-flex">
+                        <p><i class="fa-regular fa-calendar-days"></i>
+                        </p>
+                        <p id="txt-nacimiento"></p>
+                    </div>
+
+                    <div class="perfil-flex">
+                        <p>
+                            <i class="fas fa-envelope-open-text"></i></p>
+                        <p id="txt-email"></p>
+                    </div>
+                    <div class="perfil-flex">
+                        <p><i class="fa-solid fa-venus-mars"></i></p>
+                        <p id="txt-genero"></p>
+                    </div>
+                </form>
+            </div>
+            
+            <form class="formulario-2">
+
+                <div id="izquierda">
+
+                    <div class="perfil-flex" >
+                        <p><span for="txt-altura" class="texto-perfil">Altura en centímetros:</span></p>
+                        <p id="txt-altura"></p>
+                    </div>
+                    <div>
+                        <div class="pesos-registro">
+                            <p><label for="pesos-registrados" class="texto-perfil">Peso inicio:</label></p>
+                            <p id="txt-inicio"></p>
+                        </div>
+                        <div class="pesos-registro">
+                            <p><label for="pesos-registrados" class="texto-perfil">Peso actual:</label></p>
+                            <p id="txt-peso"></p>
+                        </div>
+                    </div>
+ 
+                    <div class="perfil-flex">
+                        <span  class="texto-perfil"> IMC inicio:</span>
+                        <p id="txt-imc-inicial"></p>
+                    </div>
+
+
+                    <div class="perfil-flex">
+                        <span  class="texto-perfil"> IMC actual:</span>
+                        <p id="txt-imc"></p>
+                    </div>
+
+                    <div class="perfil-flex">
+                        <p><label for="txt-peso-ideal" class="texto-perfil"> Peso idóneo:</label></p>
+                        <p id="txt-peso-ideal"></p>
+                    </div>
+
+                    <div class="perfil-flex">
+                        <p><label for="text-actividad" class="texto-perfil">¿Realiza actividad física?</label></p>
+                        <p id="txt-actividad"></p>
+                    </div>
+
+                    
+                </div>
+
+                <div id="derecha">
+                    <div>
+                        <p><label for="txt-Proteina" class="texto-perfil"> Gramos de proteína diaria:</label></p>
+                        <div class="protes">
+                        <span>Mínimo: </p></span>
+                        <p id="txt-proteina-min" ></p>
+                    </div>
+
+                    <div class="protes">
+                        <span>Máximo: </p></span>
+                        <p id="txt-proteina-max" ></p>
+                        </div>
+                    </div>
+        
+                    <div class="perfil-flex">
+                        <p><label for="text-Enfermedades" class="texto-perfil">¿Alguna enfermedad?</label></p>
+                        <p id="txt-enfermedad"></p>
+                     </div>
+
+                     <div class="perfil-flex">
+                        <p><label for="txt-agua" class="texto-perfil"> Cantidad de vasos de agua al día:</label></p>
+                        <p id="txt-agua" ></p>
+                    </div>
+
+                    <div>
+                        <p id="txt-nombre-enfermedad"></p>
+                        <p id="txt-descripcion"> </p>
+                        <p id="txt-tratamiento"></p>
+                        <p id="txt-estado"></p>
+                    </div>
+                </div>   
+        
+        </section>
+    </main>
+    
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/servicio-general.js"></script>
+    <script src="js/perfil.js"></script>
+    
+</body>
+
+</html>

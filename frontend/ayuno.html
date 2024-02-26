@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 1. Archivo reset css -->
+    <!--  <link rel="stylesheet" href="css/reset.css"> -->
+    <!-- 2. Archivos de css externos (fuentes) -->
+    <script src="https://kit.fontawesome.com/d66d5b6a78.js" crossorigin="anonymous"></script>
+    <!-- 3. Estilos personalizados -->
+    <link rel="stylesheet" href="css/encabezados.css">
+    <link rel="stylesheet" href="css/ayuno.css">
+
+    <title>Ayuno FASTHABIT</title>
+</head>
+
+<body>
+    <header>
+        <nav class="menu-trasero">
+            <ul class="menu-horizontal">
+                <li class="principal"><a href="landing.html">MENU</a>
+                    <ul class="menu-vertical">
+                        <div class="menu1">
+                            <div class="menu-flex">
+                                <li class="secundario"><i class="fa-sharp fa-solid fa-house"></i><a href="landing.html">INICIO</a></li>
+                            </div>
+
+                            <div class="menu-flex">
+                                <li class="secundario"><i class="fa-solid fa-circle-user"></i><a href="perfil.html">PERFIL</a></li>
+                            </div>
+
+                            <div class="menu-flex">
+                                <li class="secundario"><i class="fa-solid fa-hourglass-start"></i></i><a href="ayuno.html">AYUNO</a></li>
+                            </div>
+                            <div class="menu-flex">
+                                <li class="secundario"><i class="fa-solid fa-weight-scale"></i><a href="pesos.html">PESOS</a></li>
+                            </div>
+                        </div>
+
+                        <div class="menu2">
+
+
+                            <div class="menu-flex">
+                                <li class="secundario"><i class="fa-solid fa-utensils"></i><a href="recetas.html">RECETAS</a></li>
+                            </div>
+
+                            <div class="menu-flex">
+                                <li class="secundario"><i class="fa-solid fa-bullseye"></i><a href="objetivos.html">OBJETIVOS</a></li>
+                            </div>
+                            <div class="menu-flex">
+                                <li class="secundario"><i class="fa-solid fa-dumbbell"></i><a href="actividad.html">ACTIVIDAD</a></li>
+                            </div>
+                            <div class="menu-flex">
+                                <li class="secundario"><i class="fa-solid fa-id-card"></i><a href="registro.html">REGISTRO</a></li>
+                            </div>
+                        </div>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+
+    </header>
+    <main id="main">
+        <div class="encabezado">
+            <div class="tab-ayuno">
+                <p class="tipo">Ayuno</p>
+            </div>
+            <div class="logo">
+                <p class="fast">FASTHABIT</p>
+            </div>
+        </div>
+
+        <!-- *****OJO****** --- > No cambiar nada de lo de arriba <---  -->
+        <div id="sct-contenedor">
+            <div class="cuadro elegir-plan">
+                <div class="envuelve-titulo-parrafo">
+                    <p class="txt-titulo-planayuno"> Su plan de ayuno</p>
+                    <p class="txt-parrafo-planayuno">Seleccione un plan</p>
+                </div>
+                <div id="envuelve-btns" class="envuelve-btns">
+                    <button id="btn-principiante" class="btn principiante"> <p class="tipo-usuario">Principiante</p>
+                        <p class="hora">14:10</p>
+                    <p class="descripcion-ayuno">Un ayuno de 14 horas con un periodo de comidas de 10 horas.</p>
+                    </button>
+
+                    <button id="btn-intermedio" class="btn Intermedio"> <p class="tipo-usuario">Intermedio</p>
+                        <p class="hora">16:8</p>
+                    <p class="descripcion-ayuno">Un ayuno de 16 horas con un periodo de comidas de 8 horas.</p></button>
+
+                    <button id="btn-avanzado" class="btn Avanzado"> <p class="tipo-usuario">Avanzado</p>
+                        <p class="hora">18:6</p>
+                    <p class="descripcion-ayuno">Un ayuno de 18 horas con un periodo de comidas de 6 horas.</p></button>
+
+                    <button id="btn-experto" class="btn Experto"> <p class="tipo-usuario">Experto</p>
+                        <p class="hora">20:4</p>
+                    <p class="descripcion-ayuno">Un ayuno de 20 horas con un periodo de comidas de 4 horas.</p></button>
+                </div>
+                <div class="txt-parrafo-dieta">
+                    <p> Recuerde que toda dieta requiere la supervisión de expertos</p>
+                </div>
+            </div>
+
+            <div class="cuadro progreso-ayuno">
+                <div class="envuelve-titulo-huno">
+                    <h1 class="txt-titulo-progreso-ayuno">Progreso del ayuno</h1>
+                </div>
+                <br>
+                <div class="envuelve-parrafo-mes">
+                    <input type="month" id="buscar-mes" name="mes" class="buscar-mes">
+                </div>
+                <br>
+
+                <div class="envuelve-calendario">
+                    <div class="calendario">
+                        <ul id="dias" class="dias">
+                        </ul>
+                    </div>
+                </div>
+
+
+                <div class="txt-inicio-fin">
+                    <p class="text-inicio">Inicio</p>
+                    <p class="txt-final">Fin</p>
+                </div>
+
+                <div class="envuelve-inputs">
+                    <div class="envuelve-input-fecha-incio-ayuno">
+                        <input id="input-fecha-1" class="input-fecha-1" type="datetime-local">
+                    </div>
+                    <div class="envuelve-input-fecha-final-ayuno">
+                        <input id="input-fecha-2" class="input-fecha-2" type="datetime-local">
+                    </div>
+
+
+                </div>
+
+
+
+
+
+                <div class="envuelve-btn-set-ayuno">
+                    <button class="btn-set-ayuno" id="button-set-ayuno">Añadir</button>
+                </div>
+
+            </div>
+
+            <div class="cuadro contador">
+
+                <div class="envuelve-titulo-parrafo-contador">
+                    <p class="titulo-parrafo-contador">Prepárese para ayunar!</p>
+                    <p class="txt-parrafo-contador">Mi plan de ayuno: <span id="ayuno-plan-text"></span></p>
+                </div>
+
+                <div class="menu-inicio">
+                    <div class="envuelve-cronometro">
+                        <div class="cronometro-circulo">
+                            <span>Inicio de Ayuno</span>
+                            <span id="timer-empezar-ayuno">00:00:00</span>
+                        </div>
+                    </div>
+                    <div class="envuelve-btn-empezar-ayuno">
+                        <button class="btn-empezar-ayuno" id="button"> Empezar Ayuno</button>
+                    </div>
+                </div>
+
+                <div class="menu-emergente">
+                    <div class="envuelve-cronometro">
+                        <div class="cronometro-circulo">
+                            <span class="txt-tiempo">Tiempo restante</span>
+                            <br>
+                            <span id="timer-correr-ayuno"></span>
+                        </div>
+                    </div>
+
+                    <div class="envuelve-btn-terminar-ayuno-emergente">
+                        <button id="btn-terminar-ayuno-emergente" class="btn-terminar-ayuno-emergente"> Finalizar Ayuno</button>
+                    </div>
+                    <div class="envuelve-inicio-fin-ayuno-dos">
+                        <div class="envuelve-txt-inicio-dos">
+                            <p> Inicio</p>
+                            <span id="timer-inicio-del-ayuno" class="timer-inicio"> 00:00:00</span>
+                        </div>
+                        <div class="txt-fin-del-ayuno-dos">
+                            <p> Fin</p>
+                            <span id="timer-fin-del-ayuno" class="timer-fin"> 00:00:00</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- 1 Axios -->
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <!-- 2 Sweet -->
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+        <script src="./js/ayuno.js"></script>
+    </main>
+</body>
+
+</html>

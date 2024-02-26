@@ -1,0 +1,338 @@
+* {
+  box-sizing: border-box;
+}
+
+.body-pesos {
+  height: 700px;
+}
+
+#main {
+  padding-top: 30px;
+  height: 550px;
+}
+
+#pesos-principal {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 560px;
+}
+
+.cuadros {
+  border: 2px solid #1e272e;
+  height: 85%;
+  display: flex;
+  width: 25%;
+  flex-direction: column;
+  /* justify-content: space-evenly;*/
+  align-items: center;
+}
+
+.ultimo-peso {
+  /* border: 2px solid #1e272e;*/
+  height: 40%;
+  width: 95%;
+  top: 300px;
+  padding-left: 10px;
+}
+
+.objetivo-pesos {
+  /*border: 2px solid #1e272e;*/
+  height: 40%;
+  width: 95%;
+  padding-left: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.objetivo-pesos {
+  margin-top: 15%;
+  height: 205px;
+}
+
+.pesos-idoneo {
+  /* border: 2px solid #1e272e;*/
+  /* height: 40%;*/
+  width: 95%;
+  padding-left: 10px;
+}
+
+.peso-digito {
+  width: fit-content;
+  height: 50px;
+}
+
+.imc {
+  /* border: 2px solid #1e272e;*/
+  height: 40%;
+  width: 95%;
+  padding-left: 10px;
+}
+
+.barra-imc {
+  display: flex;
+  flex-direction: column;
+  height: 60px;
+  justify-content: space-evenly;
+}
+
+.grafico-pesos {
+  /*border: 2px solid #1e272e;*/
+  height: 40%;
+  width: 95%;
+  padding-left: 10px;
+}
+
+.tabla-pesos {
+  /*border: 2px solid #1e272e;*/
+  height: 50%;
+  width: 95%;
+  padding-left: 10px;
+  max-height: 50%;
+  overflow: hidden;
+  overflow-y: scroll;
+  margin-top: 10%;
+}
+
+.tabla {
+  margin-top: 5%;
+  border-collapse: collapse;
+  width: 95%;
+}
+
+.tabla-titulo {
+  color: #82ccdd;
+}
+
+.peso-actual-barra {
+}
+
+th,
+td {
+  padding: 3px;
+  border: 2px solid #1e272e;
+  text-align: center;
+}
+
+.encabezado-dos {
+  width: fit-content;
+  color: #82ccdd;
+  height: 25px;
+}
+
+.encabezado-IMC {
+  color: #82ccdd;
+}
+
+.pesoIdealActualizado,
+.peso-actual {
+  width: fit-content;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.mensaje-motivacion {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  width: 250px;
+  height: 25px;
+  text-align: justify;
+  padding-bottom: 10%;
+}
+
+.ingresar-peso {
+  display: none;
+  height: 200px;
+  width: 100%;
+  background-color: #fff;
+  position: relative;
+  bottom: 119%;
+  right: 2%;
+}
+
+.formulario {
+  height: 40%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 1%;
+}
+
+.columnas {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 40%;
+  padding: 3%;
+}
+
+.emergente {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #82ccdd;
+  font-size: 16px;
+  font-weight: 600;
+  height: 30px;
+}
+
+.botones-form {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.btn-actualizar {
+  display: flex;
+  align-items: center;
+  background: #82ccdd;
+  border-color: #82ccdd;
+  color: #fff;
+  font-size: 16px;
+  height: 30px;
+  margin-top: 10%;
+}
+
+.btn-actualizar:hover {
+  border-radius: 5%;
+  background: #fff;
+  color: #82ccdd;
+}
+
+.btn-salir,
+.btn-guardar {
+  background: #82ccdd;
+  border-color: #82ccdd;
+  color: #fff;
+  font-size: 14px;
+  width: 100px;
+}
+
+.btn-salir {
+  margin-left: 5%;
+}
+
+.btn-salir:hover {
+  border-radius: 5%;
+  background: #fff;
+  color: #82ccdd;
+}
+
+.btn-guardar:hover {
+  border-radius: 5%;
+  background: #fff;
+  color: #82ccdd;
+}
+
+.peso {
+}
+
+.dia {
+}
+
+.boton {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.input-error {
+  border: 3.5px solid #c0392b;
+}
+
+.progress {
+  background: grey;
+  border-radius: 20px;
+  height: 30px;
+  width: 270px;
+  margin-top: 5%;
+}
+
+.progress-done {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  height: 100%;
+  width: 0;
+  transition: 1s ease 0.3s;
+}
+
+.obesidad-3 {
+  background: #ec210a;
+}
+
+.obesidad-2 {
+  background: #c0c02b;
+}
+
+.obesidad-1 {
+  background: #cc8821;
+}
+
+.sobrepeso {
+  background: #c0c02b;
+}
+
+.normal {
+  background: #0e96d0;
+}
+
+.bajo {
+  background: #054662;
+}
+
+.sinDatos {
+  background: grey;
+}
+
+.inputContainer {
+  display: flex;
+  width: 50%;
+  justify-content: flex-start;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.progreso {
+  background-color: grey;
+  border-radius: 20px;
+  height: 30px;
+  width: 270px;
+}
+
+.progreso-done {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  background-color: #82ccdd;
+  color: #fff;
+  height: 100%;
+  width: 0;
+  transition: 1s ease 0.3s;
+}
+
+.texto-objetivos-pesos {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.peso-objetivo-container {
+  display: flex;
+  width: 95%;
+  justify-content: space-between;
+  height: fit-content;
+  font-size: 12.5px;
+}
+
+.valor-peso-ideal,
+.valor-peso-actual {
+  font-weight: 600;
+  font-size: 18px;
+}

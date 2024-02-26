@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- 1. Archivo reset css -->
+    <!--  <link rel="stylesheet" href="css/reset.css"> -->
+    <!-- 2. Archivos de css externos (fuentes) -->
+    <script
+      src="https://kit.fontawesome.com/d66d5b6a78.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- 3. Estilos personalizados -->
+    <link rel="stylesheet" href="css/encabezados.css" />
+    <link rel="stylesheet" href="css/recetas.css" />
+    <title>Recetas FASTHABIT</title>
+  </head>
+
+  <body>
+    <header>
+      <nav class="menu-trasero">
+        <ul class="menu-horizontal">
+          <li class="principal">
+            <a href="landing.html">MENU</a>
+            <ul class="menu-vertical">
+              <div class="menu1">
+                <div class="menu-flex">
+                  <li class="secundario">
+                    <i class="fa-sharp fa-solid fa-house"></i
+                    ><a href="landing.html">INICIO</a>
+                  </li>
+                </div>
+
+                <div class="menu-flex">
+                  <li class="secundario">
+                    <i class="fa-solid fa-circle-user"></i
+                    ><a href="perfil.html">PERFIL</a>
+                  </li>
+                </div>
+
+                <div class="menu-flex">
+                  <li class="secundario">
+                    <i class="fa-solid fa-hourglass-start"></i
+                    ><a href="ayuno.html">AYUNO</a>
+                  </li>
+                </div>
+                <div class="menu-flex">
+                  <li class="secundario">
+                    <i class="fa-solid fa-weight-scale"></i
+                    ><a href="pesos.html">PESOS</a>
+                  </li>
+                </div>
+              </div>
+
+              <div class="menu2">
+                <div class="menu-flex">
+                  <li class="secundario">
+                    <i class="fa-solid fa-utensils"></i
+                    ><a href="recetas.html">RECETAS</a>
+                  </li>
+                </div>
+
+                <div class="menu-flex">
+                  <li class="secundario">
+                    <i class="fa-solid fa-bullseye"></i
+                    ><a href="objetivos.html">OBJETIVOS</a>
+                  </li>
+                </div>
+                <div class="menu-flex">
+                  <li class="secundario">
+                    <i class="fa-solid fa-dumbbell"></i
+                    ><a href="actividad.html">ACTIVIDAD</a>
+                  </li>
+                </div>
+                <div class="menu-flex">
+                  <li class="secundario">
+                    <i class="fa-solid fa-id-card"></i
+                    ><a href="registro.html">REGISTRO</a>
+                  </li>
+                </div>
+              </div>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main">
+      <div class="encabezado">
+        <div class="tab-recetas">
+          <p class="tipo">Recetas</p>
+        </div>
+        <div class="logo">
+          <p class="fast">FASTHABIT</p>
+        </div>
+      </div>
+
+      <!-- *****OJO****** --- > No cambiar nada de lo de arriba <---  -->
+
+      <section id="sct-recetas">
+        <div class="contenedor1">
+          <form
+            class="formulario"
+            method="post"
+            enctype="multipart/form-data"
+            action="/upload"
+          >
+            <div class="ingreso-receta">Ingrese su nueva receta</div>
+            <div class="ingreso-imagen">
+              <img
+                class="placeholder"
+                id="foto"
+                alt="foto de receta"
+                src="images/dish.png"
+              />
+              <button type="button" id="btn-img">Agregar imagen</button>
+            </div>
+            <div class="ingreso-nombre">
+              <p class="txt-nombre">Nombre</p>
+              <input
+                type="txt"
+                id="input-nombre"
+                class="input-nombre requerido"
+              />
+            </div>
+
+            <div class="ingreso-ingredientes">
+              <p class="txt-ingredientes">Ingredientes</p>
+              <input
+                type="txt"
+                id="input-ingredientes"
+                class="input-ingredientes requerido"
+              />
+            </div>
+            <div class="ingreso-tipo-comida">
+              <p class="txt-tipo-comida">Tipo de comida</p>
+              <select class="filtro-comida requerido" id="opciones-tipo-comida">
+                <option value="">Seleccione una categoría</option>
+                <option value="desayuno">Desayuno</option>
+                <option vale="almuerzo">Almuerzo</option>
+                <option value="cena">Cena</option>
+                <option value="snack">Snack</option>
+              </select>
+            </div>
+
+            <div class="ingreso-categoria-comida">
+              <p class="txt-categoria-comida">Categoría de comida</p>
+              <select
+                class="filtro-comida requerido"
+                id="opciones-categoria-comida"
+              >
+                <option value="">Seleccione una categoría</option>
+                <option value="tradicional">Tradicional</option>
+                <option value="vegetariana">Vegetariana</option>
+                <option value="vegana">Vegana</option>
+                <option value="libre-gluten">Libre de gluten</option>
+                <option value="keto">Keto</option>
+              </select>
+            </div>
+            <div class="ingreso-preparacion-comida">
+              <p class="txt-preparacion-comida">Preparación</p>
+              <input
+                type="txt"
+                id="ingreso-preparacion"
+                class="ingreso-preparacion requerido"
+              />
+            </div>
+            <button type="button" id="btn-agregar" value="refrescar">
+              Agregar
+            </button>
+          </form>
+        </div>
+        <div class="contenedor-lista">
+          <div class="filtro-recetas">
+            <p class="txt-filtro-tipo">Tipo</p>
+
+            <select class="slt-tipo" id="filtro-tipo">
+              <option value="">--Elija--</option>
+              <option value="desayuno">Desayuno</option>
+              <option value="almuerzo">Almuerzo</option>
+              <option value="cena">Cena</option>
+              <option value="snack">Snack</option>
+            </select>
+
+            <p class="txt-filtro-cate">Categoría</p>
+
+            <select class="slt-categoria" id="filtro-categoria">
+              <option value="">--Elija--</option>
+              <option value="tradicional">Tradicional</option>
+              <option value="vegetariana">Vegetariana</option>
+              <option value="vegana">Vegana</option>
+              <option value="libre-gluten">Libre de gluten</option>
+              <option value="keto">Keto</option>
+            </select>
+            <div class="btn-filtre">
+              <button type="button" id="btn-filtrar">Ver</button>
+            </div>
+          </div>
+
+          <div class="contenedor2">
+            <section id="sct" class="sct-filtro"></section>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script
+      src="https://widget.cloudinary.com/v2.0/global/all.js"
+      type="text/javascript"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/sevicio-imagen-recetas.js"></script>
+    <script src="js/servicio-general.js"></script>
+    <script src="js/recetas.js"></script>
+  </body>
+</html>

@@ -1,0 +1,507 @@
+  #main {
+      padding-top: 60px;
+  }
+  /*secction uno*/
+  
+  .imagen {
+      height: 675px;
+      overflow: hidden;
+      width: 100vw;
+  }
+  
+  .img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+  }
+  
+  .inicio {
+      color: #fff;
+      font-size: 36px;
+      font-weight: 900;
+      left: 5%;
+      position: absolute;
+      top: 10%;
+  }
+  
+  .uno,
+  .dos {
+      display: flex;
+      align-items: center;
+      text-align: start;
+      color: #fff;
+      font-weight: 900;
+      position: absolute;
+      left: 5%;
+      width: 580px;
+      height: 100px;
+  }
+  
+  .uno {
+      font-size: 36px;
+      top: 28%;
+  }
+  
+  .dos {
+      font-size: 24px;
+      top: 43%;
+  }
+  
+  .tranforme-uno {
+      line-height: 38px;
+  }
+  
+  .tranforme-dos {
+      line-height: 30px;
+  }
+  
+  .btn-perfil {
+      color: #1e272e;
+      font-size: 36px;
+      font-weight: 900;
+      left: 12%;
+      position: absolute;
+      top: 60%;
+  }
+  
+  .btn-perfil a {
+      text-decoration: none;
+  }
+  
+  .perfilbtn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #82ccdd;
+      border-color: #82ccdd;
+      color: #fff;
+      font-size: 20px;
+      font-weight: 900;
+      height: 60px;
+      width: 200px;
+  }
+  
+  .perfilbtn:hover {
+      border-radius: 5%;
+      background: #fff;
+      color: #82ccdd;
+  }
+  /*seccion dos*/
+  
+  #intermitente {
+      margin-top: 3%;
+  }
+  
+  .contedor {
+      font-size: 18px;
+      font-weight: 500;
+      margin-left: 10%;
+      margin-top: 3%;
+      width: 800px;
+  }
+  
+  .contenido-uno {
+      line-height: 30px;
+  }
+  
+  .contenido-dos {
+      margin-top: 3%;
+  }
+  
+  .contenido-tres {
+      margin-top: 3%;
+  }
+  
+  .titulo,
+  .titulo-cinco {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #82ccdd;
+      font-size: 28px;
+      font-weight: 900;
+  }
+  /*seccion tres*/
+  
+  #info {
+      margin-top: 8%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+  }
+  
+  .info-contenedor {
+      align-items: center;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+  }
+  
+  .titulo-tres {
+      color: #82ccdd;
+      font-size: 28px;
+      font-weight: 900;
+      margin-left: 5%;
+  }
+  
+  .texto-tres {
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 30px;
+      margin-left: 5%;
+      margin-right: 2%;
+  }
+  
+  .sintomas {
+      margin-left: 150px;
+  }
+  
+  .durante-ayuno,
+  .sintomas {
+      border: solid #1e272e;
+      height: 380px;
+      padding-top: 3%;
+      width: 450px;
+  }
+  /*seccion cuatro*/
+  
+  .titulo-cuatro {
+      margin-top: 8%;
+      color: #82ccdd;
+      font-size: 28px;
+      font-weight: 900;
+      text-align: center;
+  }
+  
+  #alimentos {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      margin-top: 6%;
+  }
+  
+  .bloque-uno {
+      margin-right: 10%;
+  }
+  
+  .bloque-dos {
+      margin-left: 2%;
+  }
+  
+  .bloque-tres {
+      margin-left: 11%;
+  }
+  
+  .titulo-alimentos {
+      padding-left: 10%;
+      color: #82ccdd;
+      font-size: 24px;
+      font-weight: 900;
+  }
+  
+  .texto-alimentos {
+      margin: 0;
+      padding: 0;
+      padding-left: 10%;
+      font-size: 20px;
+      font-weight: 580;
+      color: #1e272e;
+  }
+  
+  .lista-prote,
+  .lista-frutas,
+  .lista-carbos,
+  .lista-verduras,
+  .lista-grasas {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      border: solid #1e272e;
+      height: 200px;
+      width: 250px;
+  }
+  /*seccion cinco*/
+  
+  #beneficios {
+      margin-top: 8%;
+  }
+  
+  #beneficios,
+  .beneficios-encabezado,
+  .texto-cinco {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+  }
+  
+  .texto-cinco {
+      font-size: 20px;
+      margin-top: 4%;
+      text-align: center;
+      width: 800px;
+  }
+  
+  .icono {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      height: 500px;
+      margin-top: 4%;
+      width: 700px;
+  }
+  
+  .iconos-dos {
+      margin-left: 45%;
+  }
+  
+  .icono-mobile {
+      display: none;
+  }
+  /*estilos mobile*/
+  
+  @media all and (max-width: 320px) {
+      .imagen {
+          height: 570px;
+          width: 100vw;
+      }
+      .inicio {
+          top: 8%;
+      }
+      .uno {
+          color: #1e272e;
+          font-size: 20px;
+          font-weight: 700;
+          height: 200px;
+          left: 4%;
+          top: 95%;
+          width: 300px;
+      }
+      .dos {
+          color: #1e272e;
+          font-size: 16px;
+          font-weight: 500;
+          height: 140px;
+          top: 115%;
+          width: 300px;
+      }
+      .tranforme-uno {
+          line-height: 30px;
+          text-align: center;
+          margin-left: 4%;
+          margin-right: 4%;
+      }
+      .tranforme-dos {
+          line-height: 25px;
+          text-align: center;
+          margin-left: 4%;
+          margin-right: 4%;
+      }
+      .btn-perfil {
+          font-size: 20px;
+          font-weight: 600;
+          left: 28%;
+          top: 135%;
+      }
+      .perfilbtn {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background: #82ccdd;
+          border-color: #82ccdd;
+          color: #fff;
+          font-size: 18px;
+          font-weight: 900;
+          height: 50px;
+          width: 150px;
+      }
+      .perfilbtn:hover {
+          border-radius: 5%;
+          background: #fff;
+          color: #82ccdd;
+      }
+      /*seccion dos*/
+      #intermitente {
+          margin-top: 400px;
+      }
+      .contedor {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+      }
+      .titulo {
+          color: #82ccdd;
+          font-size: 20px;
+          font-weight: 700;
+      }
+      .contenido-uno {
+          font-size: 14px;
+          height: 50px;
+          line-height: 25px;
+          text-align: justify;
+          width: 250px;
+      }
+      .contenido-dos {
+          display: none;
+      }
+      .contenido-tres {
+          font-size: 14px;
+          height: 50px;
+          line-height: 25px;
+          text-align: justify;
+          width: 250px;
+          margin-top: 18%;
+      }
+      /*seccion tres*/
+      #info {
+          margin-top: 30%;
+      }
+      .info-contenedor {
+          flex-direction: column;
+      }
+      .durante-ayuno,
+      .sintomas {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: center;
+          height: 300px;
+          padding-top: 0%;
+          width: 300px;
+      }
+      .durante-ayuno {
+          height: 300px;
+      }
+      .sintomas {
+          height: 350px;
+      }
+      .durante-ayuno {
+          margin-bottom: 5%;
+      }
+      .titulo-tres {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          color: #82ccdd;
+          font-size: 20px;
+          font-weight: 700;
+          margin-left: 0%;
+          width: 300px;
+      }
+      .texto-tres {
+          font-size: 14px;
+          font-weight: 500;
+          line-height: 25px;
+          margin-left: 8%;
+          margin-right: 8%;
+          margin-top: 0%;
+      }
+      .sintomas {
+          margin-left: 0px;
+          padding-bottom: 8%;
+      }
+      /*seccion cuatro*/
+      .titulo-cuatro {
+          margin-top: 15%;
+          font-size: 20px;
+          font-weight: 700;
+          margin-left: 8%;
+          margin-right: 8%;
+      }
+      #alimentos {
+          display: block;
+          margin-top: 0%;
+          width: 300px;
+      }
+      .bloque-uno,
+      .bloque-dos {
+          height: 400px;
+          width: 300px;
+          margin-left: 5%;
+          margin-right: 5%;
+      }
+      .bloque-dos {
+          height: 400px;
+          width: 300px;
+          margin-left: 5%;
+          margin-right: 5%;
+          margin-top: 8%;
+      }
+      .bloque-tres {
+          margin-left: 5%;
+          margin-right: 5%;
+          margin-top: 8%;
+          height: 250px;
+          width: 300px;
+      }
+      .titulo-alimentos {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: #1e272e;
+          font-size: 22px;
+          font-weight: 900;
+          margin-right: 15%;
+      }
+      .texto-alimentos {
+          margin: 0;
+          padding: 0;
+          font-size: 14px;
+          margin-left: 5%;
+      }
+      .lista-prote,
+      .lista-frutas,
+      .lista-carbos,
+      .lista-verduras,
+      .lista-grasas {
+          height: 130px;
+          width: 200px;
+          margin-left: 15%;
+      }
+      /*seccion cinco*/
+      .icono {
+          display: none;
+      }
+      /*seccion cinco*/
+      #beneficios {
+          margin-top: 0%;
+      }
+      #beneficios,
+      .beneficios-encabezado,
+      .texto-cinco {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+      }
+      .titulo-cinco {
+          font-size: 18px;
+          width: 250px;
+          margin-left: 5%;
+          margin-right: 5%;
+          text-align: center;
+      }
+      .texto-cinco {
+          font-size: 14px;
+          font-weight: 500;
+          line-height: 20px;
+          margin-left: 8%;
+          margin-right: 8%;
+          margin-top: 12%;
+          text-align: justify;
+          width: 250px;
+      }
+      .icono-mobile {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          height: 300px;
+          margin-top: 0%;
+      }
+      .icono {
+          display: none;
+      }
+  }

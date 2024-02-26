@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <!-- 1. Archivo reset css -->
+    <!--  <link rel="stylesheet" href="css/reset.css"> -->
+
+    <!-- 2. Archivos de css externos (fuentes) -->
+    <script src="https://kit.fontawesome.com/d66d5b6a78.js" crossorigin="anonymous"></script>
+    <!-- 3. Estilos personalizados -->
+    <link rel="stylesheet" href="css/encabezados.css">
+    <link rel="stylesheet" href="css/pesos.css">
+
+    <title>Pesos FASTHABIT</title>
+</head>
+
+<body>
+    <header>
+        <nav class="menu-trasero">
+            <ul class="menu-horizontal">
+                <li class="principal"><a href="landing.html">MENU</a>
+                    <ul class="menu-vertical">
+                        <div class="menu1">
+                            <div class="menu-flex">
+                                <li class="secundario"><i class="fa-sharp fa-solid fa-house"></i><a href="landing.html">INICIO</a></li>
+                            </div>
+
+                            <div class="menu-flex">
+                                <li class="secundario"><i class="fa-solid fa-circle-user"></i><a href="perfil.html">PERFIL</a></li>
+                            </div>
+
+                            <div class="menu-flex">
+                                <li class="secundario"><i class="fa-solid fa-hourglass-start"></i></i><a href="ayuno.html">AYUNO</a></li>
+                            </div>
+                            <div class="menu-flex">
+                                <li class="secundario"><i class="fa-solid fa-weight-scale"></i><a href="pesos.html">PESOS</a></li>
+                            </div>
+                        </div>
+
+                        <div class="menu2">
+
+
+                            <div class="menu-flex">
+                                <li class="secundario"><i class="fa-solid fa-utensils"></i><a href="recetas.html">RECETAS</a></li>
+                            </div>
+
+                            <div class="menu-flex">
+                                <li class="secundario"><i class="fa-solid fa-bullseye"></i><a href="objetivos.html">OBJETIVOS</a></li>
+                            </div>
+                            <div class="menu-flex">
+                                <li class="secundario"><i class="fa-solid fa-dumbbell"></i><a href="actividad.html">ACTIVIDAD</a></li>
+                            </div>
+                            <div class="menu-flex">
+                                <li class="secundario"><i class="fa-solid fa-id-card"></i><a href="registro.html">REGISTRO</a></li>
+                            </div>
+                        </div>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+    <main id="main">
+        <div class="encabezado">
+            <div class="tab-pesos">
+                <p class="tipo">Pesos</p>
+            </div>
+            <div class="logo">
+                <p class="fast">FASTHABIT</p>
+            </div>
+        </div>
+
+
+        <!-- *****OJO****** --- > No cambiar nada de lo de arriba <---  -->
+
+        <section id="pesos-principal">
+            <div class="cuadros">
+                <div class="ultimo-peso">
+                    <h1 class="encabezado-dos">Último</h1>
+                    <p class="peso-actual">kg</p>
+                    <p class="mensaje-motivacion">
+                        Roma no se construyó en un día. ¡Sigua y verá resultados!
+                    </p>
+                    <div class="boton">
+                        <button type="button" class="btn-actualizar">
+              Actualización
+            </button>
+                    </div>
+
+                    <div class="ingresar-peso">
+                        <form class="formulario">
+                            <div class="columnas">
+                                <p class="emergente">Fecha actual</p>
+                                <label for="dia"></label>
+                                <input type="date" class="dia" />
+                            </div>
+                            <div class="columnas">
+                                <p class="emergente"> Peso actual</p>
+                                <label for="peso"></label>
+                                <input type="number" class="peso" />
+                            </div>
+
+                        </form>
+                        <div class="botones-form">
+                            <button type="button" class="btn-guardar">Guardar</button>
+                            <button type="button" class="btn-salir" onclick="location.reload()">Salir</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="objetivo-pesos">
+                    <h1 class="encabezado-dos">Objetivos</h1>
+                    <div class="peso-objetivo-container">
+                        <div class="peso-actual-barra">
+                            <p class="valor-peso-actual"></p>
+                            <p class="texto-objetivos-pesos">Peso actual</p>
+
+
+
+
+                        </div>
+                        <div class="peso-idoneo-barra">
+                            <p class="valor-peso-ideal"></p>
+                            <p class="texto-objetivos-pesos">Peso idóneo</p>
+
+
+                        </div>
+                    </div>
+                    <div class="progreso">
+                        <div class="progreso-done"></div>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="cuadros">
+                <div class="pesos-idoneo">
+                    <h1 class="encabezado-dos">Su peso ideal es de:</h1>
+                    <div class="peso-digito">
+                        <p class="pesoIdealActualizado">kg</p>
+                    </div>
+                </div>
+
+                <div class="imc">
+                    <h1 class="encabezado-IMC">IMC</h1>
+                    <div class="barra-imc">
+                        <div class="inputContainer">
+
+                        </div>
+                        <div class="progress">
+                            <div class="progress-done"></div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+            <div class="cuadros">
+                <div class="grafico-pesos">
+
+                    <canvas id="myChart" style="width: 100%;height: 450px; max-width: 600px"></canvas>
+                </div>
+                <div class="tabla-pesos">
+                    <table class="tabla">
+                        <thead class="tabla-titulo">
+                            <tr>
+                                <th>Fecha</th>
+                                <th>Peso</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/servicio-general.js"></script>
+    <script src="js/pesos.js"></script>
+
+
+
+
+</body>
+
+</html>

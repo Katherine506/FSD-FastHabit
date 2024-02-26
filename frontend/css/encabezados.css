@@ -1,0 +1,215 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    margin: 0;
+    overflow-x: hidden;
+    width: 100vw;
+}
+
+header {
+    position: fixed;
+    width: 100vw;
+    display: flex;
+    height: 60px;
+    margin: 0;
+    z-index: +1;
+}
+
+nav {
+    width: 100vw;
+    background-color: #82ccdd;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.principal {
+    width: 100px;
+    text-align: center;
+}
+
+.menu-horizontal {
+    list-style: none;
+}
+
+.menu-horizontal>li>a {
+    color: #fff;
+    display: block;
+    font-size: 24px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.menu-horizontal>li:hover {
+    background-color: #fff;
+}
+
+.menu-vertical {
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 250px;
+    height: 750px;
+    left: 0;
+    top: 0;
+    background-color: #82ccdd;
+    font-size: 20px;
+    z-index: +1;
+}
+
+.menu-horizontal li:hover .menu-vertical {
+    display: block;
+}
+
+.menu-vertical li:hover {
+    background-color: #1e272e;
+}
+
+.menu-vertical li a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 15px 15px 20px;
+}
+
+.menu-vertical li i {
+    z-index: 2;
+    top: 10;
+    color: #fff;
+    width: 51px;
+    /* padding: 15px 15px 15px 20px;*/
+}
+
+.encabezado {
+    margin-top: 3%;
+    align-items: center;
+    display: flex;
+    height: 40px;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.tab {
+    padding-right: 67%;
+}
+
+.tab-actividad {
+    padding-right: 55%;
+}
+
+.tab-ayuno {
+    padding-right: 65%;
+}
+
+.tab-recetas {
+    padding-right: 64%;
+}
+
+.tab-objetivos {
+    padding-right: 62%;
+}
+
+.tab-pesos {
+    padding-right: 66%;
+}
+
+.tipo {
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.logo {
+    padding-right: 100px;
+}
+
+.fast {
+    font-size: 36px;
+    font-weight: 800;
+}
+
+.menu-flex .secundario {
+    display: flex;
+    flex-direction: row;
+}
+
+.menu-flex .secundario i {
+    padding-top: 10%;
+}
+
+
+/*Para Celular*/
+
+@media all and (max-width: 320px) {
+    .menu-trasero {
+        display: flex;
+        align-self: center;
+        justify-content: center;
+    }
+    .principal a {
+        display: inline-block;
+    }
+    .menu-horizontal {
+        padding-right: 10%;
+    }
+    .secundario a {
+        display: flex;
+        flex-direction: row;
+    }
+    .menu-horizontal>li>a {
+        background-color: #82ccdd;
+        font-size: 22px;
+        font-weight: 500;
+    }
+    .menu-vertical {
+        width: 320px;
+        height: 630px;
+        left: 0;
+        top: 0%;
+        font-size: 16px;
+        background-color: #fff;
+    }
+    .menu-horizontal li:hover .menu-vertical {
+        display: block;
+    }
+    .menu-vertical li:hover {
+        background-color: #fff;
+    }
+    .menu-vertical li a {
+        display: block;
+        text-decoration: none;
+        color: #82ccdd;
+    }
+    .menu-vertical li i {
+        color: #82ccdd;
+    }
+    .menu-flex .secundario {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .menu-flex .secundario i {
+        padding-top: 10%;
+    }
+    .menu1,
+    .menu2 {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding-right: 20%;
+    }
+    .menu1 {
+        padding-top: 40%;
+    }
+    .menu2 {
+        padding-top: 20%;
+    }
+    .secundario {
+        width: 85px;
+    }
+}

@@ -1,0 +1,188 @@
+* {
+  box-sizing: border-box;
+}
+
+.body-objetivos {
+  height: 10px;
+}
+
+#main {
+  padding-top: 30px;
+}
+
+/*Estilos para el formulario de crear logros personalizados*/
+
+#main-objetivos {
+  display: flex;
+  flex-direction: row;
+  height: 550px;
+  column-gap: 150px;
+  position: fixed;
+}
+
+.frm-titulo {
+  padding-left: 5%;
+  color: #82ccdd;
+  font-size: 22px;
+  font-weight: 600;
+  height: 65px;
+}
+
+.cnd-form {
+  border: 2px solid #1e272e;
+  width: 300px;
+  height: 450px;
+  margin-left: 5rem;
+  margin-top: 5%;
+}
+
+.frm-crear-logro {
+  width: 100%;
+  padding-left: 5%;
+  font-size: 16px;
+  font-weight: 600;
+  height: 20px;
+}
+
+.frm-crear-logro label {
+  margin-left: 3px;
+  margin-bottom: 7px;
+}
+
+.frm-crear-logro input {
+  width: 70%;
+  margin-left: 3px;
+  margin-bottom: 7px;
+}
+.frm-crear-logro select {
+  margin-top: 5%;
+  width: 180px;
+  margin-left: 3px;
+  margin-bottom: 7px;
+}
+.frm-crear-logro .btn {
+  align-content: center;
+}
+
+.input-error {
+  border: 2px solid #eb3b5a;
+}
+
+/*Estilos para los logros preestablecidos*/
+
+.logros-default {
+  display: flex;
+  justify-content: center;
+  border: 2px solid #1e272e;
+  margin-top: 15px;
+  display: flex;
+  flex-direction: row;
+  height: 85px;
+  gap: 10px;
+  width: 700px;
+}
+
+.title-logros-default {
+  color: #82ccdd;
+  font-size: 24px;
+  font-weight: 900;
+  height: 20px;
+}
+
+.logros-default div {
+  text-align: center;
+}
+
+.logros-default p {
+  font-size: 12px;
+  height: 30px;
+  width: 100px;
+}
+
+.completado {
+  border: 2px solid green;
+}
+
+.incompleto {
+  border: 2px solid red;
+}
+
+/*Estilos para los logros personalizados*/
+
+.cnd-logros-main {
+  margin-top: 3%;
+  padding-right: 5%;
+}
+
+.cnd-logros-perso {
+  border: 2px solid #311906;
+  margin-top: 15px;
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  padding: 10px;
+  max-height: 300px;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+.cnd-logros-perso p {
+  padding: 5px;
+  border: 2px solid #311906;
+}
+.cnd-logros-perso div {
+  text-align: center;
+  padding: 5px;
+}
+
+#tbl-objetivos tr {
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
+#tbl-objetivos tr {
+  border: 2px solid #311906;
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+}
+
+#tbl-descripcion tr {
+  border: 2px solid #311906;
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+}
+
+.btn-logros {
+  display: flex;
+}
+
+.btn-logros {
+  padding-top: 3%;
+  padding-left: 25%;
+}
+
+#btn-agregar {
+  background: #82ccdd;
+  border-color: #82ccdd;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  height: 30px;
+  width: 100px;
+  margin-top: 10%;
+}
+
+#btn-agregar:hover {
+  border-radius: 5%;
+  background: #fff;
+  color: #82ccdd;
+}
+
+.txt-cantidad {
+  width: 80px;
+}

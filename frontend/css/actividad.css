@@ -1,0 +1,214 @@
+#main {
+    padding-top: 30px;
+}
+
+#sct-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding-top: 35px;
+    height: 550px;
+}
+
+.cuadro {
+    border: 2px solid #1e272e;
+    border-radius: 5px;
+    height: 550px;
+    padding-top: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 340px;
+}
+
+.ingresar-actividad-fisica {
+    display: flex;
+    flex-direction: column;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+.envuelve-titutlo-ingresar-actividad-fisica {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    height: 30px;
+    margin-left: 5%;
+   
+}
+
+.titulo-act,
+.titulo-historial,
+.tit-act {
+    color: #82ccdd;
+    font-size: 22px;
+    font-weight: 900;
+    text-align: center;
+}
+
+.envuelve-calendario {
+    margin-left: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 300px;
+    height: 50px;
+    margin-top: 5%;
+}
+
+.envuelve-selector-actividad,
+.envuelve-horas-actividad {
+    margin-left: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 300px;
+    height: 40px;
+    margin-top: 8%;
+}
+
+#actividades-menu,
+#slt-horas {
+    width: 70%
+}
+
+.envuelve-horas-actividad,
+.subtitulo-actividad {
+    color: #1e272e;
+    font-weight: bold;
+    font-size: 16px;
+    width: 70%;
+}
+
+.btn-agregar-actividad {
+    margin-left: 5%;
+    background: #82ccdd;
+    border-color: #82ccdd;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 900;
+    height: 30px;
+    width: 150px;
+    margin-bottom: 3%;
+    margin-top: 10%;
+}
+
+.btn-agregar-actividad:hover {
+    border-radius: 5%;
+    background: #fff;
+    color: #82ccdd;
+}
+
+.envuelve-cuadro-interno-superior {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 300px;
+    padding-left: 10px;
+}
+
+.envuelve-titulo-historial {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    height: 15px;
+}
+
+.ingresar-historial {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+.envuelve-grafico-historial {
+    height: 400px;
+}
+
+.envuelve-cuadro-interno-inferior {
+    display: flex;
+    flex-direction: column;
+    height: 360px;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+.envuelve-cuadro-interno-inferior th {
+    color: #ffffff;
+    font-weight: bold;
+    background-color: #82ccdd;
+}
+
+.table,
+th,
+td {
+    border-bottom: 1px solid #aaafb9;
+    border-left: 2px solid #aaafb9;
+}
+
+.envuelve-cuadro-interno-superior-dos {
+    height: 260px;
+    padding-left: 10px;
+    
+}
+
+.envuelve-titulo-actividad {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 280px;
+    height: 30px;
+}
+
+.envuelve-selector-actividad-dos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 230px;
+}
+
+.ingresar-buscar-actividad {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.envuelve-cuadro-interno-inferior-dos {
+    padding-top: 5%;
+    display: flex;
+    flex-direction: column;
+    height: 230px;
+    padding-left: 3px;
+    padding-right: 3px;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+.envuelve-cuadro-interno-inferior-dos th {
+    color: #ffffff;
+    font-weight: bold;
+    background-color: #82ccdd;
+}
+
+.input-error {
+    border: 2px solid red;
+}
+
+.input-actividad {
+    width: 70%;
+}
+
+.texto-tabla{
+   font-size: 16px;
+
+}
+
+.tabla{
+    width: 303px;
+    min-height: 200px;
+}

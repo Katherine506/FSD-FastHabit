@@ -1,0 +1,307 @@
+#main {
+  padding-top: 30px;
+}
+
+#sct-recetas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.contenedor1 {
+  border: 2px solid #1e272e;
+  height: 600px;
+  width: 400px;
+}
+
+.contenedor2 {
+  border: 2px solid #1e272e;
+  height: 487px;
+  width: 400px;
+}
+
+.contenedor1 {
+  margin-right: 5%;
+}
+
+.contenedor2 {
+  /* margin-right: 5%; */
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
+.ingreso-receta {
+  font-size: 25px;
+  font-weight: 600;
+  color: #82ccdd;
+}
+
+#foto {
+  max-width: 90px;
+  max-height: 90px;
+  object-fit: contain;
+}
+
+/* Estilos aplicados al input de la imagen de la receta */
+
+.formulario {
+  padding-left: 70px;
+  padding-top: 20px;
+}
+
+.ingreso-imagen {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+}
+
+.ingreso-nombre {
+  margin-top: 35px;
+  width: 180px;
+}
+
+/* Aqui terminan los estilos del input */
+
+.ingreso-nombre,
+.ingreso-ingredientes,
+.ingreso-tipo-comida,
+.ingreso-categoria-comida,
+.ingreso-preparacion-comida {
+  margin-top: 20px;
+  font-weight: 600;
+}
+
+#btn-agregar {
+  display: flex;
+  background: #82ccdd;
+  border-color: #82ccdd;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+#btn-img {
+  display: flex;
+  background: #82ccdd;
+  border-color: #82ccdd;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  margin-left: 15px;
+  height: 35px;
+  margin-top: 5%;
+}
+
+#btn-filtrar {
+  display: flex;
+  align-items: center;
+  background: #82ccdd;
+  border-color: #82ccdd;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  height: 30px;
+}
+
+#btn-agregar:hover,
+#btn-img:hover {
+  border-radius: 5%;
+  background: #fff;
+  color: #82ccdd;
+}
+
+#btn-filtrar:hover {
+  border-radius: 5%;
+  background: #fff;
+  color: #82ccdd;
+}
+
+.input-error {
+  border: 2px solid red;
+}
+
+.desayunos,
+.almuerzos,
+.cenas,
+.meriendas {
+  margin-left: 10px;
+  margin-top: 15px;
+  border: 2px solid #1e272e;
+  height: 200px;
+  width: 320px;
+}
+
+.titulo-desayuno,
+.titulo-almuerzo,
+.titulo-cena,
+.titulo-merienda {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 5px;
+  padding-left: 2px;
+  margin-left: 5px;
+  width: 150px;
+  height: 40px;
+}
+
+.txt-receta,
+.txt-desayunos,
+.txt-almuerzo,
+.txt-cena,
+.txt-merienda {
+  font-size: 20px;
+  font-weight: 600;
+  color: #82ccdd;
+}
+
+.tabla {
+  border: 2px solid black;
+}
+
+.tabla thead {
+  background: #82ccdd;
+  font-weight: bold;
+  font-size: 18px;
+  text-align: left;
+}
+
+.tabla thead th,
+.tabla tbody td {
+  height: 25px;
+  min-width: 150px;
+}
+
+.txt-nombre,
+.txt-ingredientes,
+.txt-tipo-comida,
+.txt-categoria-comida,
+.txt-preparacion-comida {
+  height: 10px;
+}
+
+.filtro-recetas {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #1e272e;
+  margin-left: 0px;
+  height: 100px;
+  width: 400px;
+}
+
+.buscar-receta {
+  margin-top: 5px;
+  margin-left: 5%;
+  font-size: 22px;
+  font-weight: 600;
+  color: #82ccdd;
+  width: 200px;
+}
+
+.txt-filtro,
+.txt-filtro-categoria {
+  color: #1e272e;
+  font-weight: 400;
+  height: 20px;
+}
+
+.txt-filtro-categoria {
+  height: 20px;
+  margin-top: 25%;
+}
+
+.slt-tipo,
+.slt-categoria {
+  width: 90px;
+}
+
+.filtrar-comida {
+  margin-top: 4px;
+  margin-left: 5px;
+  width: 90px;
+  height: 10px;
+}
+
+.filtro-categoria-receta {
+  margin-top: 4px;
+  margin-left: 5px;
+  width: 130px;
+}
+
+.resultado-filtro {
+  border: solid #1e272e;
+  margin-top: 15px;
+  margin-left: 10px;
+  height: 250px;
+  width: 320px;
+}
+
+.filtro {
+  margin-left: 15%;
+  width: 200px;
+}
+
+.filtro-comida {
+  width: 190px;
+}
+
+.recetaimg {
+  height: 80px;
+  width: 80px;
+  margin-left: 10px;
+}
+
+h3 {
+  margin-left: 10px;
+}
+
+#sct {
+  margin-left: 10px;
+  width: 92.5%;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.resultados {
+  margin-left: 10px;
+  width: 80%;
+}
+
+.card {
+  border: 2px solid black;
+  margin-top: 10px;
+}
+
+.contenedor-lista {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 500px;
+  /* margin-right: 5%; */
+}
+
+.sct-filtro {
+  display: flex;
+  flex-direction: column;
+  width: 10%;
+  gap: 2px;
+}
+
+.txt-filtro-tipo {
+  font-weight: 600;
+  width: 50px;
+}
+
+.txt-filtro-cate {
+  font-weight: 600;
+  margin: 2%;
+  width: 80px;
+}
+
+.btn-filtre {
+  margin-left: 3%;
+}

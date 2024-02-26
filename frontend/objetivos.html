@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 1. Archivo reset css -->
+    <!--  <link rel="stylesheet" href="css/reset.css"> -->
+    <!-- 2. Archivos de css externos (fuentes) -->
+    <script src="https://kit.fontawesome.com/d66d5b6a78.js" crossorigin="anonymous"></script>
+    <!-- 3. Estilos personalizados -->
+    <link rel="stylesheet" href="css/encabezados.css">
+    <link rel="stylesheet" href="css/objetivos.css">
+
+    <title>Objetivos FASTHABIT</title>
+</head>
+
+<body class="body-objetivos">
+    <header>
+        <nav class="menu-trasero">
+            <ul class="menu-horizontal">
+                <li class="principal"><a href="landing.html">MENU</a>
+                    <ul class="menu-vertical">
+                        <div class="menu1">
+                            <div class="menu-flex">
+                                <li class="secundario"><i class="fa-sharp fa-solid fa-house"></i><a href="landing.html">INICIO</a></li>
+                            </div>
+
+                            <div class="menu-flex">
+                                <li class="secundario"><i class="fa-solid fa-circle-user"></i><a href="perfil.html">PERFIL</a></li>
+                            </div>
+
+                            <div class="menu-flex">
+                                <li class="secundario"><i class="fa-solid fa-hourglass-start"></i></i><a href="ayuno.html">AYUNO</a></li>
+                            </div>
+                            <div class="menu-flex">
+                                <li class="secundario"><i class="fa-solid fa-weight-scale"></i><a href="pesos.html">PESOS</a></li>
+                            </div>
+                        </div>
+
+                        <div class="menu2">
+
+
+                            <div class="menu-flex">
+                                <li class="secundario"><i class="fa-solid fa-utensils"></i><a href="recetas.html">RECETAS</a></li>
+                            </div>
+
+                            <div class="menu-flex">
+                                <li class="secundario"><i class="fa-solid fa-bullseye"></i><a href="objetivos.html">OBJETIVOS</a></li>
+                            </div>
+                            <div class="menu-flex">
+                                <li class="secundario"><i class="fa-solid fa-dumbbell"></i><a href="actividad.html">ACTIVIDAD</a></li>
+                            </div>
+                            <div class="menu-flex">
+                                <li class="secundario"><i class="fa-solid fa-id-card"></i><a href="registro.html">REGISTRO</a></li>
+                            </div>
+                        </div>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+    <main id="main">
+
+        <div class="encabezado">
+            <div class="tab-objetivos">
+                <p class="tipo">Objetivos</p>
+            </div>
+            <div class="logo">
+                <p class="fast">FASTHABIT</p>
+            </div>
+        </div>
+
+        <!-- *****OJO****** --- > No cambiar nada de lo de arriba <---  -->
+
+       <section id="main-objetivos">
+      <div class="cnd-form">
+      <div class="frm-titulo"><p>Ingrese un nuevo logro</p></div>
+        <div>
+        <form class="frm-crear-logro">
+          <label for="slt-tipo">Tipo</label>
+          <select name="slt-tipo" id="slt-tipo" class="requerido">
+            <option value="0">Seleccione</option>
+            <option value="Dias de ayuno">Dias de ayuno</option>
+            <option value="subir de peso">Aumento de peso</option>
+            <option value="bajar de peso">Disminuir de peso</option>
+            <option value="subir imc">Aumentar IMC</option>
+            <option value="bajar imc">Disminuir IMC</option>
+          </select>
+          <div>
+            <label for="txt-cantidad">Cantidad</label>
+            <input type="number" id="txt-cantidad" class="requerido"/>
+          </div>
+          <div>         
+          <label for="txt-descripcion">Describe el logro</label>
+          <input type="text" id="txt-descripcion" class="requerido"/>
+        </div> 
+        
+          <button type="button" id="btn-agregar" >Agregar</button>
+        </form>
+      </div>
+      </div>
+
+      <div class="cnd-logros-main">
+        <div class="title-logros-default"><p>Logros FastHabit</p></div>
+        <div class="logros-default">
+          
+          <div id="aumento-peso">
+            <div><i class="fa-solid fa-arrow-up fa-2x"></i></div>
+            <p>Aumento de peso</p>
+          </div>
+          <div id="mantiene-peso">
+            <div><i class="fa-solid fa-equals fa-2x"></i></div>
+            <p>Mantener peso</p>
+          </div>
+          <div id="baja-peso">
+            <div><i class="fa-solid fa-down-long fa-2x  "></i></div>
+            <p>Bajar de peso</p>
+          </div>
+          <div id="sube-imc">
+            <div><i class="fa-solid fa-arrows-up-to-line fa-2x"></i></div>
+            <p>Aumentar IMC</p>
+          </div>
+          <div id="baja-imc">
+            <div><i class="fa-solid fa-arrows-down-to-line fa-2x"></i></div>
+            <p>Disminuir IMC</p>
+          </div>
+          <div id="dias-ayuno">
+            <div><i class="fa-solid fa-calendar-check fa-2x"></i></div>
+            <p>15 dias de ayuno</p>
+          </div>
+      </div>
+      <div class="title-logros-default"><p>Tablero de logros personalizados</p></div>
+      <div class="cnd-logros-perso">
+      <table id="tbl-objetivos">
+        <thead>
+          <tr>
+            <th>Tipo</th>
+          </tr>
+        </thead>
+        <tbody id="tbl-objetivos-body">
+        </tbody>
+      </table>
+      <table id="tbl-descripcion">
+        <thead>
+          <tr>
+            <th>Descripcion</th>
+          </tr>
+        </thead>
+        <tbody id="tbl-descripcion-body">
+        </tbody>
+    </div>
+</section>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="js/servicio-general.js"></script>
+    <script src="js/objetivos.js"></script>
+  </body>
+</html>

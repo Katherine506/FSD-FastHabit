@@ -1,0 +1,515 @@
+#main {
+  padding-top: 30px;
+}
+
+#sct-contenedor {
+  display: flex;
+  justify-content: space-around;
+  height: 580px;
+  padding-top: 50px;
+  width: 100%;
+}
+
+.cuadro {
+  border: 3px solid #1e272e;
+  border-radius: 5px;
+  height: 500px;
+  width: 27%;
+}
+
+.contador {
+  padding-top: 9px;
+}
+
+.envuelve-titulo-parrafo {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  height: 80px;
+}
+
+.txt-titulo-planayuno {
+  width: 80%;
+  font-size: 26px;
+  font-weight: 600;
+  width: fit-content;
+  color: #82ccdd;
+  height: 25px;
+  padding-top: 3%;
+  margin: 5%;
+  margin-bottom: 5%;
+}
+
+.titulo-parrafo-contador {
+  padding-left: 20px;
+  margin-top: 1%;
+  width: 200px;
+  font-size: 26px;
+  font-weight: 600;
+  width: 345px;
+  color: #82ccdd;
+  height: 25px;
+}
+
+.txt-parrafo-planayuno,
+.txt-parrafo-progreso-ayuno {
+  color: #1e272e;
+  font-size: 20px;
+  font-weight: 600;
+  height: 30px;
+  padding-top: 4px;
+  width: 200px;
+}
+
+.envuelve-btns {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 360px;
+}
+
+.btn {
+  border: none;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px -4px rgba(0, 0, 0, 0.75);
+  font-weight: bold;
+  background-color: #82ccdd;
+  color: #000;
+  height: 130px;
+  width: 150px;
+}
+
+.tipo-usuario {
+  font-size: 20px;
+  height: 10px;
+}
+
+.hora {
+  font-size: 18px;
+  height: 10px;
+}
+
+.descripcion-ayuno {
+  font-size: 10px;
+  font-weight: 500;
+}
+
+.envuelve-btns :hover {
+  background-color: #fff;
+  color: #1e272e;
+}
+
+.txt-parrafo-dieta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: yellow;
+  margin-top: 4.2%;
+  text-align: center;
+  height: 40px;
+  width: 100%;
+}
+
+.txt-parrafo-dieta p {
+  font-size: 11px;
+}
+
+.envuelve-titulo-huno {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  height: 45px;
+  width: 100%;
+}
+
+.txt-titulo-progreso-ayuno {
+  width: 80%;
+  font-size: 26px;
+  font-weight: 600;
+  width: fit-content;
+  color: #82ccdd;
+  height: 25px;
+}
+
+.envuelve-parrafo-mes {
+  padding-left: 18px;
+  font-weight: 500;
+}
+
+.envuelve-barras-progreso {
+  height: 380px;
+}
+
+.envuelve-dias-semana,
+.envuelve-horas-semana {
+  font-weight: 500;
+  color: black;
+  display: flex;
+  flex-direction: row;
+  height: 50px;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 60px;
+}
+
+.envuelve-barras {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  height: 180px;
+}
+
+.barras {
+  border: 2px solid #82ccdd;
+  width: 30px;
+}
+
+.verde {
+  background-color: #7bed9f;
+}
+
+.rojo {
+  background-color: #f53b57;
+}
+
+.envuelve-btns-progreso-ayuno {
+  align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+  height: 100px;
+  padding-bottom: 10%;
+}
+
+.txt-parrafo-contador {
+  color: #82ccdd;
+  font-size: 20px;
+  font-weight: 600;
+  height: 30px;
+  padding-top: 4px;
+  text-align: center;
+  width: 335px;
+}
+
+.envuelve-cronometro,
+.envuelve-cronometro-dos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+
+.cronometro-circulo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 200px;
+  height: 200px;
+  width: 200px;
+  border: 2px solid black;
+}
+
+.envuelve-btn-empezar-ayuno {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 100px;
+  margin-top: 5%;
+}
+
+.envuelve-btn-set-ayuno {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 100px;
+  margin-top: 5%;
+}
+
+.btn-empezar-ayuno {
+  width: 180px;
+  height: 40%;
+}
+
+.btn-set-ayuno {
+  width: 42%;
+  height: 40%;
+}
+
+.btns-progreso-ayuno {
+  width: 30%;
+  height: 43%;
+}
+
+.btn-empezar-ayuno,
+.btn-set-ayuno,
+.btns-progreso-ayuno {
+  background: #82ccdd;
+  border-color: #82ccdd;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 900;
+}
+
+.btn-empezar-ayuno:hover,
+.btn-set-ayuno:hover,
+.btns-progreso-ayuno:hover {
+  border-radius: 5%;
+  background: #fff;
+  color: #82ccdd;
+}
+
+.btn-empezar-ayuno-emergente,
+.btn-terminar-ayuno-emergente {
+  background: #82ccdd;
+  border-color: #82ccdd;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 900;
+  width: 40%;
+  height: 40px;
+}
+
+.btn-terminar-ayuno-emergente {
+  width: 150px;
+}
+
+.btn-empezar-ayuno-emergente:hover,
+.btn-terminar-ayuno-emergente:hover {
+  background: #fff;
+  color: #82ccdd;
+}
+
+.envuelve-inicio-fin-ayuno {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  text-align: center;
+  align-items: center;
+  height: 60px;
+  width: 333px;
+  padding-bottom: 5%;
+}
+
+.envuelve-inicio-fin-ayuno-dos {
+  display: flex;
+  flex-direction: row;
+  height: 120px;
+}
+
+.sub-empezar-ayunar {
+  margin-top: 5%;
+  font-size: 16px;
+  width: 250px;
+}
+
+.menu-inicio {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* width: 173%; */
+  /* height: 220px; */
+  /* position: absolute; */
+  top: 0;
+  display: flex;
+  /* padding-top: 33%;
+    padding-right: 73.6%; */
+}
+
+.menu-emergente {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  display: none;
+}
+
+.envuelve-calendario {
+  text-align: center;
+  height: 180px;
+  width: 100%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.dias {
+  padding: 30px 0;
+  background: #eee;
+  margin: 0;
+  height: 180px;
+}
+
+.dias li {
+  list-style-type: none;
+  display: inline-block;
+  width: 13.6%;
+  text-align: center;
+  margin-bottom: 5px;
+  font-size: 12px;
+  color: #777;
+}
+
+.dias li .exito {
+  padding: 5px;
+  background: rgb(37, 131, 37);
+  color: white !important;
+}
+
+.dias li .fallo {
+  padding: 5px;
+  background: #c83434;
+  color: white !important;
+}
+
+/* .contenido-emegente {
+    background-color: #fff;
+    margin-top: 5%;
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 390px;
+    width: 25%;
+} */
+
+.menu-emergente p {
+  padding: 10px;
+  width: 85%;
+  color: #000;
+  font-weight: 500;
+}
+
+.menu-emergente-dos {
+  position: absolute;
+  display: none;
+}
+
+.contenido-emegente-dos {
+  height: 376px;
+  width: 300px;
+  background-color: white;
+  padding-top: 7px;
+}
+
+.envuelve-btn-empezar-ayuno-emergente {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 100px;
+  padding-top: 20px;
+  width: 142%;
+}
+
+.envuelve-btn-terminar-ayuno-emergente {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 55px;
+}
+
+.envuelve-input-fecha-incio-ayuno {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 150px;
+  height: 50px;
+}
+
+.envuelve-input-fecha-final-ayuno {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 150px;
+  height: 50px;
+}
+
+.input-fecha {
+  text-align: center;
+  width: 100%;
+  height: 30px;
+}
+
+.menu-emergente .cronometro-circulo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 90px;
+}
+
+.txt-ayuno-cronometro {
+  font-weight: 500;
+  padding-left: 30px;
+}
+
+.envuelve-txt-inicio-dos {
+  width: 160px;
+  border-right: 2px solid #82ccdd;
+  color: #1e272e;
+  font-weight: 600;
+}
+
+.txt-fin-del-ayuno-dos {
+  color: #1e272e;
+  font-weight: 600;
+}
+
+.txt-tiempo,
+.cronometro-circulo span,
+.envuelve-txt-inicio-dos p,
+.txt-fin-del-ayuno-dos p {
+  color: #1e272e;
+  font-weight: 600;
+  text-align: center;
+}
+
+.envuelve-inicio-fin-ayuno-dos p {
+  width: 150px;
+  text-align: center;
+}
+
+.timer-inicio,
+.timer-fin {
+  padding-left: 45px;
+}
+
+.envuelve-inputs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 90px;
+}
+
+.txt-inicio-fin {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-right: 15px;
+  height: 35px;
+  width: 100%;
+}
+
+.text-inicio,
+.txt-final {
+  color: #1e272e;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.invalido {
+  border-color: #c83434;
+  border-style: solid;
+  border-width: 2px;
+}
+
+.txt-tiempo {
+  width: 150px;
+}

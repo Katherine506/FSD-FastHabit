@@ -1,0 +1,165 @@
+#main {
+  padding-top: 40px;
+  height: 550px;
+  position: fixed;
+}
+
+.input-error {
+  border: 2px solid #eb3b5a;
+}
+
+.titulo1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 40px;
+  width: 100vw;
+}
+
+.titulo-registro {
+  display: flex;
+  align-items: center;
+  color: #1e272e;
+  font-size: 36px;
+  font-weight: 900;
+  height: 80px;
+  width: 200px;
+}
+
+.texto-arriba {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 35px;
+  height: 80px;
+  width: 700px;
+  font-size: 24px;
+  font-weight: 600;
+  text-align: justify;
+}
+
+.contenedor-visible {
+  padding-top: 10%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 500px;
+}
+
+.imagen {
+  object-fit: cover;
+  height: 600px;
+  width: 300px;
+}
+
+.fit {
+  height: 70%;
+  object-fit: cover;
+}
+
+.contenedor {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 550px;
+}
+
+.formulario1 {
+  color: #1e272e;
+  display: flex;
+  flex-direction: row;
+  line-height: 32px;
+  margin-left: 10%;
+  padding: 5%;
+  margin-top: 8%;
+  width: 40%;
+  margin-bottom: 25%;
+}
+
+.formulario2 {
+  color: #1e272e;
+  display: flex;
+  flex-direction: row;
+  line-height: 30px;
+  padding: 5%;
+  margin-top: 9%;
+  width: 35%;
+  margin-bottom: 25%;
+}
+
+#foto {
+  max-width: 100px;
+  max-height: 100px;
+  object-fit: contain;
+}
+
+button,
+textarea,
+select,
+input {
+  width: 250px;
+}
+
+.texto-registro {
+  font-size: 14px;
+  font-weight: 550;
+}
+
+.texto-enfermedad {
+  font-size: 16;
+  font-weight: 550;
+}
+
+.btn {
+  margin-top: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#btn-calcular {
+  background: #82ccdd;
+  border-color: #82ccdd;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 900;
+  height: 30px;
+  width: 100px;
+  margin-top: 5%;
+}
+
+#btn-calcular:hover {
+  border-radius: 5%;
+  background: #fff;
+  color: #82ccdd;
+}
+
+.formulario3 {
+  background: #fff;
+  display: none;
+  position: fixed;
+  line-height: 30px;
+  right: 95px;
+  width: 320px;
+  height: 490px;
+}
+
+#btn-enfermedades {
+  background: #82ccdd;
+  border-color: #82ccdd;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 900;
+  height: 30px;
+  width: 100px;
+  margin-top: 5%;
+}
+
+#btn-enfermedades:hover {
+  border-radius: 5%;
+  background: #fff;
+  color: #82ccdd;
+}
